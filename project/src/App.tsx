@@ -37,15 +37,20 @@ function App() {
     </div>
   );
 
-  const HeroSection = () => (
-    <section className="h-screen relative overflow-hidden">
-      {/* Background image */}
-      <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/image copy copy copy.png')`
-        }}
-      >
+    const HeroSection = () => (
+      <section className="h-screen relative overflow-hidden">
+        {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/загс 180К.mp4" type="video/mp4" />
+          {/* Fallback text if the video won’t play */}
+          Ваш браузер не поддерживает видео.
+        </video>
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black/20"></div>
       </div>
