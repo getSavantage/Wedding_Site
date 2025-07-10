@@ -37,25 +37,25 @@ function App() {
     </div>
   );
 
-    const HeroSection = () => (
-      <section className="h-screen relative overflow-hidden">
-        {/* Background video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/загс 180К.mp4" type="video/mp4" />
-          {/* Fallback text if the video won’t play */}
-          Ваш браузер не поддерживает видео.
-        </video>
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/20"></div>
-      </div>
-    </section>
-  );
+const HeroSection = () => (
+  <section className="h-screen relative overflow-hidden">
+    {/* Background video */}
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src="/загс 180К.mp4" type="video/mp4" />
+      Ваш браузер не поддерживает видео.
+    </video>
+
+    {/* Overlay for better text readability */}
+    <div className="absolute inset-0 bg-black/20"></div>
+  </section>
+);
+
 
   const WelcomeSection = () => (
     <section className="bg-stone-100 flex flex-col justify-center py-8">
