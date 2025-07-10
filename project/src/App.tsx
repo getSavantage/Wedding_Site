@@ -524,30 +524,20 @@ const HeroSection = () => (
           </p>
         </div>
         
-        {/* Video container */}
-        <div className="bg-white rounded-lg p-6 shadow-sm max-w-lg mx-auto">
-          <div className="relative aspect-video bg-gray-100 rounded-lg overflow-hidden">
-            {/* Video placeholder - replace with actual video when ready */}
-            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
-              <div className="text-center space-y-3">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md mx-auto">
-                  <Play className="w-6 h-6 text-gray-600 ml-1" />
-                </div>
-                <p className="text-gray-500 text-sm font-light font-alexander">
-                  Видео будет загружено
-                </p>
-              </div>
-            </div>
-            <video 
-              controls 
-              className="w-full h-full object-cover"
-              poster="/video-poster.jpg"
-            >
-              <source src="/Видео Итог.mp4" type="video/mp4" />
-              Ваш браузер не поддерживает видео.
-            </video>
-          </div>
-        </div>
+{/* Video container */}
+<div className="bg-white rounded-lg p-6 shadow-sm max-w-lg mx-auto">
+  <div className="relative aspect-video bg-gray-100 rounded-lg overflow-hidden">
+    <video
+      controls
+      className="w-full h-full object-cover"
+      poster="/video-poster.jpg"
+    >
+      <source src="/Видео Итог.mp4" type="video/mp4" />
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
+</div>
+
         
         {/* Final message */}
         <div className="space-y-6 pt-4">
