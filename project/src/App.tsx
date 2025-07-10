@@ -538,18 +538,14 @@ const HeroSection = () => (
                 </p>
               </div>
             </div>
-            
-            {/* Uncomment when video is ready */}
-            {/* 
             <video 
               controls 
               className="w-full h-full object-cover"
               poster="/video-poster.jpg"
             >
-              <source src="/thank-you-video.mp4" type="video/mp4" />
+              <source src="/Видео Итог.mp4" type="video/mp4" />
               Ваш браузер не поддерживает видео.
             </video>
-            */}
           </div>
         </div>
         
