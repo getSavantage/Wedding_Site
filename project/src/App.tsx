@@ -754,10 +754,6 @@ const VideoBlock = () => (
       </video>
     </motion.div>
   </AnimatedSection>
-);
-
-export default VideoBlock;
-
         
         <AnimatedSection delay={1.0} className="space-y-6 pt-4">
           <AnimatedText
@@ -769,11 +765,11 @@ export default VideoBlock;
         </AnimatedSection>
       </AnimatedSection>
       
-      <AnimatedSection delay={1.3} className="w-full mt-8">
+      <AnimatedSection delay={0.3} className="w-full mt-2">
         <AnimatedImage
           src="/Два сердца.png" 
           alt="Два сердца" 
-          delay={1.4}
+          delay={0.4}
         />
       </AnimatedSection>
     </section>
