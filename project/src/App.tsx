@@ -731,13 +731,10 @@ const HeroSection = () => (
           />
         </AnimatedSection>
         
-        {/* Video container */}
-const VideoBlock: React.FC = () => (
-  <AnimatedSection
-    delay={0.7}
-    className="w-full max-w-3xl mx-auto bg-white rounded-lg p-6 shadow-sm"
-  >
+
     {/* Video container */}
+   const VideoBlock = () => (
+  <AnimatedSection delay={0.7} className="w-full max-w-3xl mx-auto bg-white rounded-lg p-6 shadow-sm">
     <motion.div
       className="relative aspect-video bg-gray-100 rounded-lg overflow-hidden"
       initial={{ opacity: 0, scale: 0.9 }}
@@ -757,7 +754,6 @@ const VideoBlock: React.FC = () => (
         Ваш браузер не поддерживает видео.
       </video>
     </motion.div>
-  </AnimatedSection>
         
         <AnimatedSection delay={1.0} className="space-y-6 pt-4">
           <AnimatedText
