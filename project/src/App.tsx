@@ -733,27 +733,31 @@ const HeroSection = () => (
         
 
     {/* Video container */}
-   const VideoBlock = () => (
-  <AnimatedSection delay={0.7} className="w-full max-w-3xl mx-auto bg-white rounded-lg p-6 shadow-sm">
-    <motion.div
-      className="relative aspect-video bg-gray-100 rounded-lg overflow-hidden"
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ delay: 0.8, duration: 0.8 }}
-    >
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        className="w-full h-full object-cover"
-        poster="/video-poster.jpg"
+      <AnimatedSection
+        delay={0.7}
+        className="bg-white rounded-lg p-6 shadow-sm max-w-lg mx-auto"
       >
-        <source src="/Видео Итог.mp4" type="video/mp4" />
-        Ваш браузер не поддерживает видео.
-      </video>
-    </motion.div>
+        <motion.div
+          className="relative aspect-video bg-gray-100 rounded-lg overflow-hidden"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.8, duration: 0.8 }}
+        >
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className="w-full h-full object-cover"
+            poster="/video-poster.jpg"  // you can keep or remove this
+          >
+            <source src="/Видео Итог.mp4" type="video/mp4" />
+            Ваш браузер не поддерживает видео.
+          </video>
+        </motion.div>
+      </AnimatedSection>
+
         
         <AnimatedSection delay={1.0} className="space-y-6 pt-4">
           <AnimatedText
