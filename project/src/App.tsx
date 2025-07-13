@@ -735,7 +735,7 @@ const HeroSection = () => (
     {/* Video container */}
 <AnimatedSection
   delay={0.7}
-  className="w-full max-w-3xl mx-auto bg-white rounded-lg p-6 shadow-sm"
+  className="bg-white rounded-lg p-6 shadow-sm w-full max-w-screen-md mx-auto"
 >
   <motion.div
     className="relative aspect-video bg-gray-100 rounded-lg overflow-hidden"
