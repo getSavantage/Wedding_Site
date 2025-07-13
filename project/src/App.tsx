@@ -739,7 +739,7 @@ const HeroSection = () => (
 >
   <motion.div
     // Убрали aspect-video, добавили явную высоту
-    className="relative w-full h-120 bg-gray-100 rounded-lg overflow-hidden"
+    className="relative w-full h-100 bg-gray-100 rounded-lg overflow-hidden"
     initial={{ opacity: 0, scale: 0.9 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ delay: 0.8, duration: 0.8 }}
