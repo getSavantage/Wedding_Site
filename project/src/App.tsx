@@ -774,7 +774,7 @@ const HeroSection = () => (
       
       <AnimatedSection delay={0.3} className="w-full mt-2">
         <AnimatedImage
-          src="/two-hearts.png" 
+          src="/Два сердца.png" 
           alt="Два сердца" 
           delay={0.4}
         />
