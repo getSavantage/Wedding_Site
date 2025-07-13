@@ -738,8 +738,7 @@ const HeroSection = () => (
   className="w-full bg-gray-100 rounded-lg overflow-hidden"
 >
   <motion.div
-    // Убрали aspect-video, добавили явную высоту
-    className="relative w-full h-96 bg-gray-100 rounded-lg overflow-hidden"
+    className="relative w-full bg-gray-100 rounded-lg overflow-hidden"
     initial={{ opacity: 0, scale: 0.9 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ delay: 0.8, duration: 0.8 }}
@@ -750,14 +749,15 @@ const HeroSection = () => (
       loop
       playsInline
       preload="auto"
-      className="absolute inset-0 w-full h-full object-cover"
       poster="/video-poster.jpg"
+      className="w-full h-auto object-contain"
     >
       <source src="/Видео Итог.mp4" type="video/mp4" />
       Ваш браузер не поддерживает видео.
     </video>
   </motion.div>
 </AnimatedSection>
+
 
 
 
