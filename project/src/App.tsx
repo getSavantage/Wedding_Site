@@ -735,7 +735,7 @@ const HeroSection = () => (
 {/* Video container */}
 <AnimatedSection
   delay={0.7}
-  className="relative w-full h-screen md:h-[80vh] bg-gray-100 rounded-lg overflow-hidden"
+  className="relative w-full h-screen md:h-[90vh] bg-gray-100 rounded-lg overflow-hidden"
 >
   <motion.div
     // Убрали aspect-video, добавили явную высоту
